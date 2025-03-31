@@ -9,6 +9,8 @@
 body {
     background: #f6f6f6;
     display: flex;
+    flex-direction: column;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
@@ -21,7 +23,31 @@ h1 {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+}
+
+div {
+    width: 70px;
+    margin-bottom: 20px;
+    border-left: 3px solid black !important;
+    border: 3px solid transparent;
+    height: 70px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 section {
@@ -32,11 +58,8 @@ section {
 }
 
 footer {
+    position: absolute;
+    bottom: 10px;
     font-size: 13px;
-    color: grey;
-}
-
-a {
-    text-decoration: none;
-    color: grey;
+    color: black;
 }
