@@ -1,6 +1,7 @@
 # Simple Redirect Page
 
-This repository hosts a simple redirect page that automatically redirects users to the actual BB 21 Portal. (actual - http://bb-21-5a1d0159cf81.herokuapp.com)
+This repository hosts a simple redirect page that automatically redirects users to the actual BB 21 Portal.
+(actual - http://bb-21-5a1d0159cf81.herokuapp.com)
 
 ## Purpose
 
