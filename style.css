@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow: auto;
 }
 
 body {
@@ -26,6 +27,8 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-align: center;
+    word-break: break-all;
 }
 
 div {
@@ -54,12 +57,32 @@ section {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 
 footer {
     position: absolute;
     bottom: 10px;
+    padding: 0 20px;
     font-size: 13px;
     color: black;
+    text-align: center;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 200px) {
+    body {
+        padding: 0 10px;
+    }
+
+    div {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    img {
+        width: 50vw;
+        height: 50vw;
+    }
 }
